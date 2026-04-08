@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My Image Gallery</h1>
+
+<div class="gallery">
+    <img src="images/j.png" alt="B portrait" onclick="openLightbox(0)">
+    <img src="images/books.webp" alt="Stack of books" onclick="openLightbox(1)">
+    <img src="images/profile.jpg" alt="Profile image" onclick="openLightbox(2)">
+
+    <img src="images/j.png" alt="B portrait" onclick="openLightbox(0)">
+    <img src="images/books.webp" alt="Stack of books" onclick="openLightbox(1)">
+    <img src="images/profile.jpg" alt="Profile image" onclick="openLightbox(2)">
+
+    <img src="images/j.png" alt="B portrait" onclick="openLightbox(0)">
+    <img src="images/books.webp" alt="Stack of books" onclick="openLightbox(1)">
+    <img src="images/profile.jpg" alt="Profile image" onclick="openLightbox(2)">
+    <img src="images/j.png" alt="B portrait" onclick="openLightbox(0)">
+    <img src="images/books.webp" alt="Stack of books" onclick="openLightbox(1)">
+    
+</div>
+
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+    <span class="close" onclick="closeLightbox(event)">×</span>
+    <img id="lightbox-img" alt="Expanded image">
+    
+    <button class="prev" onclick="prevImage(event)">❮</button>
+    <button class="next" onclick="nextImage(event)">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+      
